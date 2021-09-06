@@ -97,3 +97,6 @@ D:\TDD\TDDTraining\TDDTrainingTests\obj\x64\Debug\netcoreapp3.1\TDDTrainingTests
 D:\TDD\TDDTraining\TDDTrainingTests\obj\x64\Debug\netcoreapp3.1\TDDTrainingTests.dll
 D:\TDD\TDDTraining\TDDTrainingTests\obj\x64\Debug\netcoreapp3.1\TDDTrainingTests.pdb
 D:\TDD\TDDTraining\TDDTrainingTests\obj\x64\Debug\netcoreapp3.1\TDDTrainingTests.genruntimeconfig.cache
+D:\TDD\TDDTraining\TDDTrainingTests\bin\x64\Debug\netcoreapp3.1\CoverletSourceRootsMapping
+D:\TDD\TDDTraining\TDDTrainingTests\bin\x64\Debug\netcoreapp3.1\TDDTraining.dll
+D:\TDD\TDDTraining\TDDTrainingTests\bin\x64\Debug\netcoreapp3.1\TDDTraining.pdb
