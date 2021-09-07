@@ -63,13 +63,28 @@ namespace TDDTrainingTests
             Assert.AreEqual(expectedResult, sut.ToString());
         }
 
+
+
         [Test]
         public void FractionAddSameDenominatorTest()
         {
-            var fractionOne = new Fraction(1,2);
-            var fractionTwo = new Fraction(1,2);
+            var fractionOne = new Fraction(2,4);
+            var fractionTwo = new Fraction(2,4);
 
             var expectedResult = new Fraction(1);
+
+            var sut = Fraction.Add(fractionOne, fractionTwo);
+
+            Assert.AreEqual(expectedResult.ToString(), sut.ToString());
+        }
+
+        [Test]
+        public void FractionAddDifferentDenominatorTest()
+        {
+            var fractionOne = new Fraction(1, 3);
+            var fractionTwo = new Fraction(1, 2);
+
+            var expectedResult = new Fraction(5,6);
 
             var sut = Fraction.Add(fractionOne, fractionTwo);
 

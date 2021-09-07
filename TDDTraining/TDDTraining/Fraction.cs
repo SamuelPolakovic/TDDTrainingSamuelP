@@ -50,10 +50,16 @@ namespace TDDTraining
 
         public static Fraction Add(Fraction fractionOne, Fraction fractionTwo)
         {
-            if (fractionOne.Denominator == fractionTwo.Denominator)
-            {
-                return new Fraction(fractionOne.Numerator + fractionTwo.Numerator,fractionOne.Denominator);
-            }
+            //if (fractionOne.Denominator == fractionTwo.Denominator)
+            //{
+            //    return new Fraction(fractionOne.Numerator + fractionTwo.Numerator,fractionOne.Denominator);
+            //}
+
+            var denominator = fractionOne.Denominator * fractionTwo.Denominator;
+            var numeratorOne = fractionOne.Numerator * fractionTwo.Denominator;
+            var numeratorTwo = fractionTwo.Numerator * fractionOne.Denominator;
+            return new Fraction(numeratorOne + numeratorTwo, denominator);
+
             throw new NotImplementedException();
         }
 
