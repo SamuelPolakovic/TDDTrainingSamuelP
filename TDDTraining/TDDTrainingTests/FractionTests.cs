@@ -90,5 +90,41 @@ namespace TDDTrainingTests
 
             Assert.AreEqual(expectedResult.ToString(), sut.ToString());
         }
+
+        [Test]
+        public void FractionAddDifferentMinusDenominatorTest()
+        {
+            var fractionOne = new Fraction(-1, 3);
+            var fractionTwo = new Fraction(1, 2);
+
+            var expectedResult = new Fraction(1, 6);
+
+            var sut = Fraction.Add(fractionOne, fractionTwo);
+
+            Assert.AreEqual(expectedResult.ToString(), sut.ToString());
+        }
+
+        [Test]
+        public void FractionAddDifferentDenominatorMinusTest()
+        {
+            var fractionOne = new Fraction(1, 3);
+            var fractionTwo = new Fraction(-1, 2);
+
+            var expectedResult = new Fraction(-1, 6);
+
+            var sut = Fraction.Add(fractionOne, fractionTwo);
+
+            Assert.AreEqual(expectedResult.ToString(), sut.ToString());
+        }
+
+        [Test]
+        public void FractionCorrectRepresentation()
+        {
+            var expectedResult = "-2";
+
+            var sut = new Fraction(-6, 3);
+
+            Assert.AreEqual(expectedResult, sut.ToString());
+        }
     }
 }

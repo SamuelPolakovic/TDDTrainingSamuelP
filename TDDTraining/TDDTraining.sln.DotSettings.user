@@ -1,18 +1,4 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9329ba93_002D4922_002D409f_002D8b88_002D037647048311/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Or&gt;&#xD;
-    &lt;Test&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::ECB1BA42-B57F-4395-BEF8-85CCEBD6E381::.NETCoreApp,Version=v3.1::TDDTrainingTests.Tests.Test1&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::ECB1BA42-B57F-4395-BEF8-85CCEBD6E381::.NETCoreApp,Version=v3.1::TDDTrainingTests.Tests&lt;/TestId&gt;&#xD;
-    &lt;/Test&gt;&#xD;
-    &lt;TestAncestor&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::ECB1BA42-B57F-4395-BEF8-85CCEBD6E381::.NETCoreApp,Version=v3.1::TDDTrainingTests.FractionTests.FractionAddTest&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::ECB1BA42-B57F-4395-BEF8-85CCEBD6E381::.NETCoreApp,Version=v3.1::TDDTrainingTests.FractionTests.FractionAddSimpleNumbersTest&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::ECB1BA42-B57F-4395-BEF8-85CCEBD6E381::.NETCoreApp,Version=v3.1::TDDTrainingTests.FractionTests.FractionConstructorSimpleNumbersTest&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::ECB1BA42-B57F-4395-BEF8-85CCEBD6E381::.NETCoreApp,Version=v3.1::TDDTrainingTests.FractionTests.FractionRepresentationTest&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::ECB1BA42-B57F-4395-BEF8-85CCEBD6E381::.NETCoreApp,Version=v3.1::TDDTrainingTests.FractionTests.FractionRepresentationDenominatorIsLowerTest&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::ECB1BA42-B57F-4395-BEF8-85CCEBD6E381::.NETCoreApp,Version=v3.1::TDDTrainingTests.FractionTests.FractionAddSameDenominatorTest&lt;/TestId&gt;&#xD;
-      &lt;TestId&gt;NUnit3x::ECB1BA42-B57F-4395-BEF8-85CCEBD6E381::.NETCoreApp,Version=v3.1::TDDTrainingTests.FractionTests.FractionAddDifferentDenominatorTest&lt;/TestId&gt;&#xD;
-    &lt;/TestAncestor&gt;&#xD;
-  &lt;/Or&gt;&#xD;
+  &lt;Project Location="D:\TDD\TDDTraining\TDDTrainingTests" Presentation="&amp;lt;TDDTrainingTests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

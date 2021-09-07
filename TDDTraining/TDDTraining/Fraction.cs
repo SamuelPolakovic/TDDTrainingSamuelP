@@ -23,13 +23,13 @@ namespace TDDTraining
 
         private void ChangeToLowestPossibleDenominator()
         {
-            if (Numerator == 1 || Numerator == 0)
+            if (Numerator == 1 || Numerator == 0 || Numerator == -1)
             {
                 return;
             }
             if (Denominator % Numerator == 0)
             {
-                var divider = Numerator;
+                var divider = Math.Abs(Numerator);
                 Denominator = Denominator / divider;
                 Numerator = Numerator / divider;
             }
@@ -46,21 +46,13 @@ namespace TDDTraining
             Denominator = 1;
         }
 
-        public double Value { get; set; }
-
         public static Fraction Add(Fraction fractionOne, Fraction fractionTwo)
         {
-            //if (fractionOne.Denominator == fractionTwo.Denominator)
-            //{
-            //    return new Fraction(fractionOne.Numerator + fractionTwo.Numerator,fractionOne.Denominator);
-            //}
-
             var denominator = fractionOne.Denominator * fractionTwo.Denominator;
             var numeratorOne = fractionOne.Numerator * fractionTwo.Denominator;
             var numeratorTwo = fractionTwo.Numerator * fractionOne.Denominator;
             return new Fraction(numeratorOne + numeratorTwo, denominator);
 
-            throw new NotImplementedException();
         }
 
         public override string ToString()
@@ -69,7 +61,8 @@ namespace TDDTraining
             {
                 return Numerator.ToString();
             }
-            return base.ToString();
+
+            return $"{Numerator}/{Denominator}";
         }
 
     }
