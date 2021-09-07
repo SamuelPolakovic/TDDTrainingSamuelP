@@ -147,5 +147,17 @@ namespace TDDTrainingTests
 
             Assert.AreEqual(expectedResult.FractionValues, sut.FractionValues);
         }
+
+        [Test]
+        public void FractionComplicatedAddRepresentationEquals()
+        {
+            var fractionOne = new Fraction(372, 654);
+            var fractionTwo = new Fraction(215, 9);
+            var expectedResult = new Fraction(23993, 981);
+
+            var sut = Fraction.Add(fractionOne, fractionTwo);
+
+            Assert.AreEqual(expectedResult, sut);
+        }
     }
 }

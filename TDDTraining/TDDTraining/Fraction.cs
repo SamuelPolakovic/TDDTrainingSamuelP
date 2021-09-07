@@ -1,7 +1,8 @@
 ﻿/* -------------------------------------------------------------------------------------------------
    Restricted - Copyright (C) Siemens Healthcare GmbH, Inc., 2021. All rights reserved
    ------------------------------------------------------------------------------------------------- */
-   
+
+#nullable enable
 using System;
 using System.Collections.Generic;
 using System.Reflection.Metadata;
@@ -30,13 +31,13 @@ namespace TDDTraining
             }
             else
             {
-                var divider = GCD(Math.Abs(Numerator), Math.Abs(Denominator));
+                var divider = GreatestCommonDivisor(Math.Abs(Numerator), Math.Abs(Denominator));
                 Denominator = (int)(Denominator / divider);
                 Numerator = (int)(Numerator / divider);
             }
         }
 
-        private static long GCD(long a, long b)
+        private static long GreatestCommonDivisor(long a, long b)
         {
             while (a != 0 && b != 0)
             {
@@ -64,6 +65,16 @@ namespace TDDTraining
             var numeratorTwo = fractionTwo.Numerator * fractionOne.Denominator;
             return new Fraction(numeratorOne + numeratorTwo, denominator);
 
+        }
+
+        public override bool Equals(object? obj)
+        {
+            if (obj is Fraction fraction)
+            {
+                return FractionValues == fraction.FractionValues;
+            }
+
+            return false;
         }
 
         public override string ToString()
