@@ -5,9 +5,12 @@
 #nullable enable
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection.Metadata;
 using System.Text;
 using Microsoft.VisualBasic;
+using static System.Int32;
+using static System.String;
 
 namespace TDDTraining
 {
@@ -58,19 +61,45 @@ namespace TDDTraining
             Denominator = 1;
         }
 
+        public Fraction(string fraction)
+        {
+            var substrings = fraction.Split("/");
+            if (substrings.Length == 1)
+            {
+                Numerator = Parse(substrings[0]);
+                Denominator = 1;
+            }
+            else if (IsNullOrEmpty(substrings[0]))
+            {
+                Numerator = 0;
+                Denominator = Parse(substrings[1]);
+            }
+            else if (substrings.Length > 2)
+            {
+                throw new InvalidDataException();
+            }
+            else
+            {
+                Numerator = Parse(substrings[0]);
+                Denominator = Parse(substrings[1]);
+            }
+
+        }
+
         public static Fraction Add(Fraction fractionOne, Fraction fractionTwo)
         {
             var denominator = fractionOne.Denominator * fractionTwo.Denominator;
             var numeratorOne = fractionOne.Numerator * fractionTwo.Denominator;
             var numeratorTwo = fractionTwo.Numerator * fractionOne.Denominator;
             return new Fraction(numeratorOne + numeratorTwo, denominator);
-
         }
 
         public override bool Equals(object? obj)
         {
             if (obj is Fraction fraction)
             {
+                ChangeToLowestPossibleDenominator();
+                fraction.ChangeToLowestPossibleDenominator();
                 return FractionValues == fraction.FractionValues;
             }
 

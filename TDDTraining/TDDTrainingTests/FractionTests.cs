@@ -129,11 +129,11 @@ namespace TDDTrainingTests
         [Test]
         public void FractionCorrectNegativeDenominatorRepresentation()
         {
-            var expectedResult = "-2";
+            var expectedResult = new Fraction(-12, 6);
 
             var sut = new Fraction(6, -3);
 
-            Assert.AreEqual(expectedResult, sut.ToString());
+            Assert.AreEqual(expectedResult, sut);
         }
 
         [Test]
@@ -154,6 +154,40 @@ namespace TDDTrainingTests
             var fractionOne = new Fraction(372, 654);
             var fractionTwo = new Fraction(215, 9);
             var expectedResult = new Fraction(23993, 981);
+
+            var sut = Fraction.Add(fractionOne, fractionTwo);
+
+            Assert.AreEqual(expectedResult, sut);
+        }
+
+        [Test]
+        public void FractionReadFromString()
+        {
+            var expected = new Fraction(2, 4);
+            
+            var sut = new Fraction("2/4");
+
+            Assert.AreEqual(expected,sut);
+        }
+
+        [Test]
+        public void FractionAddFromWithoutNumeratorString()
+        {
+            var fractionOne = new Fraction("2/4");
+            var fractionTwo = new Fraction("-2/4");
+            var expectedResult = new Fraction("/1");
+
+            var sut = Fraction.Add(fractionOne, fractionTwo);
+
+            Assert.AreEqual(expectedResult, sut);
+        }
+
+        [Test]
+        public void FractionAddFromString()
+        {
+            var fractionOne = new Fraction("3/5");
+            var fractionTwo = new Fraction("-2/4");
+            var expectedResult = new Fraction("2/20");
 
             var sut = Fraction.Add(fractionOne, fractionTwo);
 
