@@ -109,22 +109,43 @@ namespace TDDTrainingTests
         {
             var fractionOne = new Fraction(1, 3);
             var fractionTwo = new Fraction(-1, 2);
-
             var expectedResult = new Fraction(-1, 6);
 
             var sut = Fraction.Add(fractionOne, fractionTwo);
 
-            Assert.AreEqual(expectedResult.ToString(), sut.ToString());
+            Assert.AreEqual(expectedResult.FractionValues, sut.FractionValues);
         }
 
         [Test]
-        public void FractionCorrectRepresentation()
+        public void FractionCorrectNegativeRepresentation()
         {
             var expectedResult = "-2";
 
             var sut = new Fraction(-6, 3);
 
             Assert.AreEqual(expectedResult, sut.ToString());
+        }
+
+        [Test]
+        public void FractionCorrectNegativeDenominatorRepresentation()
+        {
+            var expectedResult = "-2";
+
+            var sut = new Fraction(6, -3);
+
+            Assert.AreEqual(expectedResult, sut.ToString());
+        }
+
+        [Test]
+        public void FractionComplicatedAddRepresentation()
+        {
+            var fractionOne = new Fraction(372, 654);
+            var fractionTwo = new Fraction(215, 9);
+            var expectedResult = new Fraction(23993, 981);
+
+            var sut = Fraction.Add(fractionOne, fractionTwo);
+
+            Assert.AreEqual(expectedResult.FractionValues, sut.FractionValues);
         }
     }
 }

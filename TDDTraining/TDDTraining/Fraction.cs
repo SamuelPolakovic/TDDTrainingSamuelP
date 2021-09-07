@@ -23,22 +23,33 @@ namespace TDDTraining
 
         private void ChangeToLowestPossibleDenominator()
         {
-            if (Numerator == 1 || Numerator == 0 || Numerator == -1)
-            {
-                return;
-            }
-            if (Denominator % Numerator == 0)
-            {
-                var divider = Math.Abs(Numerator);
-                Denominator = Denominator / divider;
-                Numerator = Numerator / divider;
-            }
-            else if(Numerator % Denominator == 0)
+            if(Numerator % Denominator == 0)
             {
                 Numerator = Numerator / Denominator;
                 Denominator = 1;
             }
+            else
+            {
+                var divider = GCD(Math.Abs(Numerator), Math.Abs(Denominator));
+                Denominator = (int)(Denominator / divider);
+                Numerator = (int)(Numerator / divider);
+            }
         }
+
+        private static long GCD(long a, long b)
+        {
+            while (a != 0 && b != 0)
+            {
+                if (a > b)
+                    a %= b;
+                else
+                    b %= a;
+            }
+
+            return a | b;
+        }
+
+        public (int, int) FractionValues => (Numerator, Denominator);
 
         public Fraction(int numerator)
         {
