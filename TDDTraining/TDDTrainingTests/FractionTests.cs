@@ -193,5 +193,17 @@ namespace TDDTrainingTests
 
             Assert.AreEqual(expectedResult, sut);
         }
+
+        [Test]
+        public void FractionAddFromStringWithSpaces()
+        {
+            var fractionOne = new Fraction("3 / 5");
+            var fractionTwo = new Fraction("-2 / 4");
+            var expectedResult = new Fraction(2,20);
+
+            var sut = Fraction.Add(fractionOne, fractionTwo);
+
+            Assert.AreEqual(expectedResult, sut);
+        }
     }
 }
