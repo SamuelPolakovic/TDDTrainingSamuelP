@@ -1,4 +1,10 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9329ba93_002D4922_002D409f_002D8b88_002D037647048311/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Project Location="D:\TDD\TDDTraining\TDDTrainingTests" Presentation="&amp;lt;TDDTrainingTests&amp;gt;" /&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;Project Location="D:\TDD\TDDTraining\TDDTrainingTests" Presentation="&amp;lt;TDDTrainingTests&amp;gt;" /&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A25DBCBC-5AE3-45CE-A2CB-C86D3BAA5A23::.NETCoreApp,Version=v3.1::CashRegisterTests.ScanItemsTests.ScanOneItemTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::A25DBCBC-5AE3-45CE-A2CB-C86D3BAA5A23::.NETCoreApp,Version=v3.1::CashRegisterTests.ScanItemsTests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

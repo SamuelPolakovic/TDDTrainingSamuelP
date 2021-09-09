@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDTraining", "TDDTraining\TDDTraining.csproj", "{E1520A60-D303-4547-A4B9-4C802833EFC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDDTraining", "TDDTraining\TDDTraining.csproj", "{E1520A60-D303-4547-A4B9-4C802833EFC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDTrainingTests", "TDDTrainingTests\TDDTrainingTests.csproj", "{ECB1BA42-B57F-4395-BEF8-85CCEBD6E381}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDDTrainingTests", "TDDTrainingTests\TDDTrainingTests.csproj", "{ECB1BA42-B57F-4395-BEF8-85CCEBD6E381}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashRegister", "CashRegister\CashRegister.csproj", "{A3283CC0-619A-4F11-847F-9BBBDC47207E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashRegisterTests", "CashRegisterTests\CashRegisterTests.csproj", "{A25DBCBC-5AE3-45CE-A2CB-C86D3BAA5A23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,22 @@ Global
 		{ECB1BA42-B57F-4395-BEF8-85CCEBD6E381}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ECB1BA42-B57F-4395-BEF8-85CCEBD6E381}.Release|x64.ActiveCfg = Release|x64
 		{ECB1BA42-B57F-4395-BEF8-85CCEBD6E381}.Release|x64.Build.0 = Release|x64
+		{A3283CC0-619A-4F11-847F-9BBBDC47207E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3283CC0-619A-4F11-847F-9BBBDC47207E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3283CC0-619A-4F11-847F-9BBBDC47207E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A3283CC0-619A-4F11-847F-9BBBDC47207E}.Debug|x64.Build.0 = Debug|Any CPU
+		{A3283CC0-619A-4F11-847F-9BBBDC47207E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3283CC0-619A-4F11-847F-9BBBDC47207E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3283CC0-619A-4F11-847F-9BBBDC47207E}.Release|x64.ActiveCfg = Release|Any CPU
+		{A3283CC0-619A-4F11-847F-9BBBDC47207E}.Release|x64.Build.0 = Release|Any CPU
+		{A25DBCBC-5AE3-45CE-A2CB-C86D3BAA5A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A25DBCBC-5AE3-45CE-A2CB-C86D3BAA5A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A25DBCBC-5AE3-45CE-A2CB-C86D3BAA5A23}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A25DBCBC-5AE3-45CE-A2CB-C86D3BAA5A23}.Debug|x64.Build.0 = Debug|Any CPU
+		{A25DBCBC-5AE3-45CE-A2CB-C86D3BAA5A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A25DBCBC-5AE3-45CE-A2CB-C86D3BAA5A23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A25DBCBC-5AE3-45CE-A2CB-C86D3BAA5A23}.Release|x64.ActiveCfg = Release|Any CPU
+		{A25DBCBC-5AE3-45CE-A2CB-C86D3BAA5A23}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
